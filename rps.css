@@ -1,0 +1,22 @@
+.img {
+	width: 30px;
+	height:30px;
+
+}
+
+button {
+	border: bold;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	height: 80px; 
+	width:100px; 
+
+}
+
+.container {
+          text-align: center; 
+          background-color: lightblue;
+          color: green;
+          background-size: auto;
+      }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="rps.css"/>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <title>Rock-Paper-Scissors</title>
+    <script src="rps.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rock-Paper-Scissors Challenge</h1>
+
+      <div class="info">
+        <button id="rules" class="btn btn-primary btn-xs" type="button" style="background-color: FF6666; border-radius: 15px; font-size: 200%;" onclick="showRules()"> Rules </button>
+        <button id="wanna_play" class="btn btn-success btn-xs" type="button" style="background-color: lightgreen; border-radius: 15px; font-size: 200%;" onclick="getPlayerName()"> Start </button>
+        <button id="end_game" class="btn btn-danger btn-xs" type="button" style="background-color: pink; border-radius: 15px; font-size: 200%;" onclick="beDone()"> Exit </button>
+        <p id="rule_info"></p>
+      </div>
+
+      <div class="stats" style="visibility:hidden">
+        <p id="results"></p>      
+        <p id="score"></p>
+      </div>
+
+      <div class="choices" style="visibility:hidden">
+        <p id="trigger"></p>
+        <span class="bttn" id="rock" type="button" onclick="getPlayerChoice(this.id)"><img class="pick" src="https://www.rock-paper-scissors-game.com/i/rock.png" height="50%" width="20%" alt="Rock"/></span>
+        <a><span class="bttn" id="paper" type="button" onclick="getPlayerChoice(this.id)"><img class="pick" src="https://www.rock-paper-scissors-game.com/i/paper.png" height="50%" width="20%" alt="Paper"/></span></a>
+        <a><span class="bttn" id="scissors" type="button" onclick="getPlayerChoice(this.id)"><img class="pick" src="https://www.rock-paper-scissors-game.com/i/scissors.png" height="50%" width="20%" alt="Scissors"/></span></a>
+      </div>
+
+      <div class="gameControl" style="visibility:hidden">
+        <button id="again" class="btn btn-success btn-xs" type="button" style="background-color: #DDA0DD; border-radius: 15px; font-size: 100%;" onclick="playAgain(this.id)"> Play again </button>
+        <button id="bye" class="btn btn-danger btn-xs" type="button" style="background-color: ##8B008B; border-radius: 15px; font-size: 100%;" onclick="playAgain(this.id)"> I'm done </button>
+      </div>
+      <h1 id="hasta"></h1>
+      <button id="mainpage" class="btn btn-success btn-xs" type="button" style="background-color: #D8BFD8; border-radius: 15px; height: 80px; width:200px; font-size: 200%;" onclick="window.location.href='rpsIndex.html';">Main Page</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/javascripts/rps_da.js" charset="utf-8"></script>
+  </body>
+</html>
